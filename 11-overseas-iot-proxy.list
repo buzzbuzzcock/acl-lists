@@ -1,0 +1,34 @@
+# 智能家居：境外托管云 —— 必须走代理
+# 以下全部经 DoH 真实解析 + GeoIP 实测确认在境外（fake-ip 环境下必须用 DoH）。
+# ⚠️ 切勿改成 DIRECT：直连会更慢或直接连不上。
+
+# TP-Link（AWS us-east-1 / CloudFront）
+DOMAIN-SUFFIX,tplinkcloud.com
+DOMAIN-SUFFIX,tplink.com
+DOMAIN-SUFFIX,tp-link.com
+
+# 涂鸦 Smart Life 国际版（德国 Net-Build）
+DOMAIN-SUFFIX,smartlifeapp.com
+
+# 萤石国际版（AWS eu-west-1 爱尔兰）
+DOMAIN-SUFFIX,ezvizlife.com
+
+# 乐橙国际版（AWS Global Accelerator 加拿大）
+DOMAIN-SUFFIX,imoulife.com
+
+# 科沃斯国际版（阿里云美国；ecovacs.cn 才在杭州，已在直连文件里）
+DOMAIN-SUFFIX,ecovacs.com
+
+# 海尔旗下 Candy（英国）
+DOMAIN-SUFFIX,candy-hoover.com
+
+# 华为 HiLink 海外入口（AWS / Cloudflare）
+DOMAIN-SUFFIX,hilink.com
+DOMAIN-SUFFIX,hi-link.com
+
+# 外资品牌
+DOMAIN-SUFFIX,sonos.com
+DOMAIN-SUFFIX,meethue.com
+DOMAIN-SUFFIX,philips-hue.com
+DOMAIN-SUFFIX,nest.com
+DOMAIN-SUFFIX,smartthings.com

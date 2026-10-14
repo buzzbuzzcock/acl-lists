@@ -1,0 +1,9 @@
+# 境外归因 / 深度链接 SDK
+# ⚠️ 这三家服务器在境外（Branch 美 / AppsFlyer 以 / Adjust 德）。
+#    绝不能 DIRECT（国内直连不通），也不能被广告列表 REJECT（会导致
+#    短信链接、浏览器链接唤不起 App、邀请链接失效）。
+# 策略请指向你的代理组（日常代理）。
+
+DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,branch.io
+DOMAIN-SUFFIX,adjust.com

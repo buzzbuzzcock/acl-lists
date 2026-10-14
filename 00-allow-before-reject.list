@@ -1,0 +1,24 @@
+# 风控 / 推送 / 分享 白名单（境内服务）
+# ⚠️ 必须作为第一条 RULE-SET 插入，排在 AdvertisingLite / Advertising /
+#    adblocksurgelite / BlockHttpDNS / Hijacking 之前，否则会被 REJECT 抢先命中。
+# 这些域名多数本来就在 China_Domain.list 里，但 REJECT 在前，永远轮不到。
+
+# --- 金融风控（银行/支付 App 登录失败、"环境异常"的元凶）---
+DOMAIN-SUFFIX,tongdun.net
+DOMAIN-SUFFIX,fraudmetrix.cn
+DOMAIN-SUFFIX,aliapp.org
+DOMAIN,ynuf.alipay.com
+DOMAIN,acjs.aliyun.com
+
+# --- 推送（收不到通知 / 启动卡在推送注册超时）---
+DOMAIN-SUFFIX,jpush.cn
+DOMAIN-SUFFIX,getui.com
+DOMAIN-SUFFIX,mpush.cn
+DOMAIN-SUFFIX,umeng.com
+
+# --- 分享（App 内"分享到微信/QQ"失效）---
+DOMAIN-SUFFIX,umsns.com
+
+# --- 崩溃上报（低影响，放行后可选择性移除）---
+DOMAIN-SUFFIX,bugly.qq.com
+DOMAIN,rqd.qq.com
